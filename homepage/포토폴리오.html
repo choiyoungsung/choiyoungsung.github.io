@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: #e9ecef;
+                margin: 0px;
+                padding: 0px;
+            }
+            header{
+                width: 1113px;
+                margin: 0px auto;
+            }
+            nav{
+                margin-top:42px;
+                margin-bottom: 31px;
+            }
+            header ul{
+                list-style-type: none;
+                float: right;
+                margin-top: 30px;
+                margin-bottom: 0px;
+            }
+            header>img{
+                float: left;
+                margin-top: 1px;
+            }
+            header ul li{
+                display: inline-block;
+                margin-left: 79px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            }
+            header ul li:first-child{
+                color: #47be6b;
+            }
+            #main{
+                width: 100%;
+                height: 511px;
+                background-image: url(image/beaner.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-bottom: 90px;
+                text-align: center;
+            }
+            #main>p{
+                color: white;
+                margin: 0px;
+                font-size: 100px;
+                font-family: 'Baloo Bhai';
+                padding-top: 180px;
+            }
+            #list{
+                width: 1113px;
+                margin: 0px auto;
+            }
+            #list ul{
+                padding: 0px;
+                list-style-type: none;
+                margin-bottom: 34px;
+            }
+            #list ul li{
+                display: inline-block;
+                margin-right: 60px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            }
+            #list ul li:first-child{
+                color: #47be6b;
+            }
+            #allbox1{
+                width: 1113px;
+                margin: 0px auto;
+                padding-bottom: 100px;
+            }
+            article{
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            #box1{
+                width: 350px;
+            }
+            
+            #smallbox1{
+                width: 100%;
+                height: 258px;
+                margin-bottom: 30px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            #inbox1{
+                color: white;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                z-index: 99;
+                display: none;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            #smallbox1:hover #inbox1{
+                display: block;
+            }
+            #longbox1{
+                width: 100%;
+                height: 40px;
+                background-color: lightgreen;
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            #longbox1>p{
+                padding-top: 10px;
+                color: white;
+            }
+
+            footer{
+                width: 100%;
+                height: 131px;
+                margin: 0px;
+                padding: 0px;
+                background-color: #2f3536;
+                text-align: center;
+            }
+            footer>p{
+                margin: 0px;
+                padding: 0px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+                color: #868e86;
+            }
+            footer>p:nth-child(1){
+                padding-top: 27px;
+                padding-bottom: 13px;
+            }
+            #modal{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 100;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            #popup{
+                width: 60%;
+                height: 60%;
+                margin: 200px auto;
+                overflow: scroll;
+                overflow-x: hidden;
+                border: 1px solid black;
+                background-color: white;
+            }
+            @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="image/logo3.png" width="90px" height="50px" alt="logo">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PORTFOLIO</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main"><p>PORTFOLIO</p></div>
+        <section id="list">
+            <ul>
+                <li>WebDesign & Programming</li>
+                <li>WebDesign</li>
+                <li>Editorial Design</li>
+            </ul>
+        </section>
+        <section id="allbox1">
+            <article>
+                <div id="box1">
+                    <div id="smallbox1">
+                        <img src="image/box1.png" width="100%" height="auto">
+                        <div id="inbox1">
+                            <h1>센드박스</h1>
+                            <p>설명1</p>
+                            <p>설명2</p>
+                        </div>
+                    </div>
+                    <div id="longbox1"><p>홈페이지 바로가기</p></div>
+                </div>
+                <div id="box1">
+                    <div id="smallbox1">
+                            <img src="image/box2.png" width="100%" height="auto">
+                            <div id="inbox1">
+                                <h1>아이솔루션</h1>
+                                <p>설명1</p>
+                                <p>설명2</p>
+                            </div>
+                    </div>
+                    <div id="longbox1"><p>홈페이지 바로가기</p></div>
+                </div>
+                <div id="box1">
+                    <div id="smallbox1">
+                            <img src="image/box3.png" width="100%" height="auto">
+                            <div id="inbox1">
+                                <h1>다비스</h1>
+                                <p>설명1</p>
+                                <p>설명2</p>
+                            </div>
+                    </div>
+                    <div id="longbox1"><p>홈페이지 바로가기</p></div>
+                </div>
+                <div id="box1">
+                    <div id="smallbox1">
+                            <img src="image/box4.png" width="100%" height="auto">
+                            <div id="inbox1">
+                                <h1>죠스떡볶이</h1>
+                                <p>설명1</p>
+                                <p>설명2</p>
+                            </div>
+                    </div>
+                    <div id="longbox1"><p>홈페이지 바로가기</p></div>
+                </div>
+                <div id="box1">
+                    <div id="smallbox1">
+                            <img src="image/box5.png" width="100%" height="auto">
+                            <div id="inbox1">
+                                <h1>프레이워시</h1>
+                                <p>설명1</p>
+                                <p>설명2</p>
+                            </div>
+                    </div>
+                    <div id="longbox1"><p>홈페이지 바로가기</p></div>
+                </div>
+                <div id="box1">
+                    <div id="smallbox1">
+                            <img src="image/box6.png" width="100%" height="auto">
+                            <div id="inbox1">
+                                <h1>카세어링</h1>
+                                <p>설명1</p>
+                                <p>설명2</p>
+                            </div>
+                    </div>
+                    <div id="longbox1"><p>홈페이지 바로가기</p></div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <p>E-mail:et5227@naver.com</p>
+            <p>Copyright ⓒ 2019 by Choi Young Sung. All Rights Reserved</p>
+        </footer>
+        <div id="modal">
+            <div id="popup">
+                <img src="image/pexels-photo-783944.jpg" width="500px" id="img01">
+                <img src="image/close.png" id="close">
+            </div>
+        </div>
+        <script>
+                $(function(){
+                $('#modal #close').click (function(){
+                $('#modal').fadeOut();
+                });
+                $('#img01').click (function(){
+                $('#modal').fadeIn();
+                });
+                }
+                );
+                </script>
+    </body>
+</html>
