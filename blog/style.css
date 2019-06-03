@@ -54,7 +54,8 @@ header nav ul li{
     text-align: center;
 }
 #imgs{
-    width: 100%;
+    width: 300px;
+    margin: 0 auto;
     margin-top: 50px;
 } 
 #images article img{
@@ -135,7 +136,9 @@ footer p{
         height: 33vh;
     }
     #test{
+        margin: 0px auto;
         margin-top: 30px;
+        width: 720px;
     }
     #test div{
         display: inline-block;
@@ -152,6 +155,7 @@ footer p{
         padding-bottom: 25px;
     }
     #imgs{
+        width: 720px;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
@@ -183,7 +187,7 @@ footer p{
     height: 60vh;
 }
 #imgs{
-    width: 70%;
+    width: 768px;
     margin: 0 auto;
 }
 .text2{
