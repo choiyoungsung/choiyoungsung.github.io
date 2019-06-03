@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery.js"></script>
         <title>Document</title>
     </head>
     <body>
         <div id="all">
             <header>
                 <nav id="headerbanner">
+                    <button id="button" class="menu"></button>
                     <img src="image/logo.png" width="85px" height="48px" id="headerimg1">
-                    <nav>
+                    <nav class="list">
                             <ul>
                                 <li><a href="#">CONTACT</a></li>
                                 <li><a href="#">PORTFOLIO</a></li>
@@ -19,7 +21,6 @@
                                 <li><a href="#" id="home">HOME</a></li>
                             </ul>
                         </nav>
-                <button id="button"></button>
             </header>
 
             <DIV id="banner"><img src="image/headerimg.png"></DIV>
@@ -143,5 +144,12 @@
                 <p>Copyright ⓒ 2019 by Choi Young Sung. All Rights Reserved</p>
             </footer>
         </div>
+        <script>
+            jQuery(function($){    
+            	$(".menu").click(function(){        		
+		            $(".list").stop().slideToggle("fast");    
+	             });
+            });
+        </script>
     </body>
 </html>

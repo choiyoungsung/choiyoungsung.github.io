@@ -116,6 +116,7 @@ footer p{
     font-size: 9px;
     padding: 5px;
 }
+
 @media screen and (min-width:768px){
     header{
         width: 72%;
