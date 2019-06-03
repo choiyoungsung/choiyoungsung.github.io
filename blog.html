@@ -1,0 +1,155 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="all">
+            <header>
+                <nav id="headerbanner">
+                    <button id="button" class="menujava"></button>
+                    <img src="image/logo.png" width="85px" height="48px" id="headerimg1">
+                    <nav class="list">
+                        <ul>
+                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#" id="home">HOME</a></li>
+                            </ul>
+                        </nav>
+            </header>
+
+            <DIV id="banner"><img src="image/headerimg.png"></DIV>
+
+            <section id="main">
+               <div class="maintext">
+                    <p class="text1">Do My Best</p>
+                    <p class="text2">WebDesigner Choi Young Sung</p>
+                    <p class="text3">설명</p>
+               </div>
+               <article id="test">
+                    <div>
+                        <img class="Do" src="image/Do.png">
+                        <p class="text3">대충설명하는내용</p>
+                    </div>
+                    <div>
+                        <img class="Do" src="image/My.png">
+                        <p class="text3">대충설명하는내용</p>
+                    </div>
+                    <div>
+                        <img class="Do" src="image/Best.png">
+                        <p class="text3">대충설명하는내용</p>
+                    </div>
+               </articl>
+            </section>
+            <section id="images">
+                <p class="text1">PORTFOLIO</p>
+                <p class="text2">WebDesigner Choi Young Sung</p>
+
+                    <div id="imgs">
+                        <article id="imgs1">
+                            <div class="inbox">
+                                <img src="image/img1.png">
+                                <div class="textbox">
+                                        <h1>센드박스</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                            <div class="inbox">
+                                <img src="image/img4.png">
+                                <div class="textbox">
+                                        <h1>죠스떡볶이</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                            <div class="inbox">
+                                <img src="image/img7.png">
+                                <div class="textbox">
+                                        <h1>어 나이스 페어</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                        </article>
+                        <article id="imgs2">
+                            <div class="inbox">
+                                <img src="image/img2.png">
+                                <div class="textbox">
+                                        <h1>아이솔루션</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                            <div class="inbox">
+                                <img src="image/img5.png">
+                                <div class="textbox">
+                                        <h1>프레이워시</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                            <div class="inbox">
+                                <img src="image/img8.png">
+                                <div class="textbox">
+                                        <h1>GS</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                        </article>
+                        <article id="imgs3">
+                            <div class="inbox">
+                                <img src="image/img3.png">
+                                <div class="textbox">
+                                        <h1>다비스</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                            <div class="inbox">
+                                <img src="image/img6.png">
+                                <div class="textbox">
+                                        <h1>카세어링</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                            <div class="inbox">
+                                <img src="image/img9.png">
+                                <div class="textbox">
+                                        <h1>OIIEI</h1>
+                                        <p>설명1</p>
+                                        <p>설명2</p>
+                                    </div>
+                            </div>
+                        </article>
+                    </div>
+            </section>
+            <section id="question">
+                <p class="text1">question</p>
+                <p class="text2">WebDesigner Choi Young Sung </p>
+                <p class="text3">안녕하세요. 최용성 디자이너 입니다.</p>
+                <p class="text3">질문이나 궁금한 사항이 있으시다면 메일을 보내주세요.</p>
+                <p class="text3">삐른 시일에 확인하도록하겠습니다.</p>
+                <img src="image/img10.png">
+            </section>
+            <footer>
+                <p>E-mail: et5227@naver.com</p>
+                <p>Copyright ⓒ 2019 by Choi Young Sung. All Rights Reserved</p>
+            </footer>
+        </div>
+        <script>
+            jQuery(function($){    
+            	$(".menujava").click(function(){        		
+		            $(".list").stop().slideToggle("fast");    
+	             });
+            });
+        </script>
+    </body>
+</html>
