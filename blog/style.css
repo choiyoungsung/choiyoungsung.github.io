@@ -126,12 +126,14 @@ footer p{
         float: left;
         padding-bottom: 10px;
     }
+    header nav ul {
+        float: right;
+    }
     header nav ul li{
     border: none;
     background: none;
     padding: 0px;
     display: inline-block;
-    float: right;
     margin-left: 25px;
     margin-top: 29px;
     }
