@@ -300,12 +300,11 @@ section{
     }
     #QR{
         position: absolute;
-        width: 250px;
-        height: 250px;
+        width: 210px;
+        height: 210px;
         background-color: white;
-        top: 270px;
-        left: 250px;
-        display: none;
+        top: 100px;
+        left: 450px;
     }
     #skill{
         position: absolute;
