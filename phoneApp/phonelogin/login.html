@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            #wrapper{
+                width: 360px;
+                height: 640px;
+                margin: 0px auto;
+                background-color: rgb(235, 108, 24);
+            }
+            .rogoimg{
+                text-align: center;
+            }
+            .rogoimg>img{
+                margin: 70px 0px 50px 0px;
+            }
+            #loginpage{
+                width: 300px;
+                height: 330px;
+                background-color: lightgray;
+                margin: 0px auto;
+                padding-top: 30px;
+            }
+            .email{
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 20px;
+            }
+            .email>img{
+                position: absolute;
+                top: 11px;
+                left: 30px;
+            }
+            .email>input{
+                width: 200px;
+                height: 50px;
+                font-family: 'Nanum Gothic', sans-serif;
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 16px;
+                padding-left: 50px;
+                border: none;
+            }
+            .password{
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 20px;
+            }
+            .password>img{
+                position: absolute;
+                top: 6px;
+                left: 35px;
+            }
+            .suc{
+                padding-left: 25px;
+                margin-bottom: 10px;
+            }
+            .suc>input{
+                width: 250px;
+                height: 50px;
+                font-family: 'Nanum Gothic', sans-serif;
+                background-color: limegreen;
+                font-size: 30px;
+                font-weight: bolder;
+                border: none;
+            }
+            .password>input{
+                width: 200px;
+                height: 50px;
+                font-family: 'Nanum Gothic', sans-serif;
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 16px;
+                padding-left: 50px;
+                border: none;
+            }
+            .kakao{
+                width: 200px;
+                height: 35px;
+                background-color: rgb(252, 224, 0);
+                margin: 0px auto;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            .kakao>img{
+                top: 6px;
+                left: 10px;
+                position: absolute;
+            }
+            .kakao>p{
+                font-family: 'Nanum Gothic', sans-serif;
+                top: 10px;
+                left: 55px;
+                font-size: 14px;
+                position: absolute;
+            }
+            .gogle{
+                width: 200px;
+                height: 35px;
+                background-color: white;
+                margin: 0px auto;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            .gogle>img{
+                top: 5px;
+                left: 10px;
+                position: absolute;
+            }
+            .gogle>p{
+                font-family: 'Nanum Gothic', sans-serif;
+                top: 10px;
+                left: 55px;
+                font-size: 14px;
+                position: absolute;
+            }
+            .rlogin{
+                text-align: center;
+                width: 170px;
+                margin: 0px auto;
+            }
+            .rlogin>p{
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 12px;
+                display: inline-block;
+            }
+            .rlogin>p a{
+                text-decoration: none;
+                color: rgb(235, 108, 24);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="rogoimg">
+                <img src="img/rogo.png" width="300px" height="auto">
+            </div>
+            <div id="loginpage">
+                <div class="login">
+                    <div class="email">
+                        <img src="img/e-mail.png" width="40px" height="auto">
+                        <input type="text" value="이메일을 입력하세요.">
+                    </div>
+                    <div class="password">
+                        <img src="img/password.png" width="30px" height="auto">
+                        <input type="text" value="비밀번호를 입력하세요.">
+                    </div>
+                    <div class="suc">
+                        <input type="submit" value="Login">
+                    </div>
+                </div>
+                <div class="anlogin">
+                    <div class="kakao">
+                        <img src="img/kakao.png" width="25px" height="auto">
+                        <p>카카오톡 로그인</p>
+                    </div>
+                    <div class="gogle">
+                        <img src="img/gogle.png" width="25px" height="auto">
+                        <p>구글 로그인</p>
+                    </div>
+                </div>
+                <div class="rlogin">
+                    <p class="two"><a href="#">가입하기</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
