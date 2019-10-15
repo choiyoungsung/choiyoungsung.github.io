@@ -17,14 +17,17 @@
                 <div class="login">
                     <div class="email">
                         <img src="img/e-mail.png" width="40px" height="auto">
-                        <input type="text" value="이메일을 입력하세요.">
+                        <input type="text" value="이메일을 입력하세요." id="id">
                     </div>
                     <div class="password">
                         <img src="img/password.png" width="30px" height="auto">
-                        <input type="text" value="비밀번호를 입력하세요.">
+                        <input type="text" value="비밀번호를 입력하세요." id="password">
+                    </div>
+                    <div id="wrong">
+                        <p>이메일이나 비밀번호가 맞지 않습니다</p>
                     </div>
                     <div class="suc">
-                        <input type="submit" value="Login">
+                        <input type="button" value="Login">
                     </div>
                 </div>
                 <div class="anlogin">
@@ -42,5 +45,40 @@
                 </div>
             </div>
         </div>
+        <script src="jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.suc').on('click',function(){
+                    var ids = document.getElementById('id');
+                    var pws = document.getElementById('password');
+                    var idStr = ids.value;
+                    var pwStr = pws.value;
+                    console.log(idStr+pwStr);
+
+                    var req = new XMLHttpRequest();
+                    req.onreadystatechange = function(){
+                        if( this.readyState == 4 ){
+                            var data = JSON.parse( this.response );
+                            console.log(data);
+                            for( var idx in data ){
+                                var idData = data[idx].id;
+                                var pwData = data[idx].pw;
+                                console.log( 'id='+idData );
+                                console.log( 'pw='+pwData );
+                                if( (idStr == idData) && (pwStr == pwData) ){
+                                    open('../phonemainmedia/Android.html');
+                                }
+                                else{
+                                    var no = document.getElementById('wrong');
+                                    no.style.visibility = 'visible';
+                                }
+                            }
+                        }
+                    }
+                    req.open('GET','ajax.txt');
+                    req.send();
+                });
+            });
+        </script>
     </body>
 </html>
