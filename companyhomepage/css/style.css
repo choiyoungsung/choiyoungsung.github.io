@@ -127,12 +127,16 @@ header>#main{
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    cursor: pointer;
 }
 .right>div>p{
     color: white;
 }
 .right>div>img{
     padding-top: 18px;
+}
+.right>div:hover{
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .subpage{
     position: absolute;
@@ -199,18 +203,52 @@ section{
     width: 1200px;
     margin: 0px auto;
 }
-.sildebtn{
-    padding-bottom: 15px;
-}
 .sec-silde{
+    width: 1200px;
+    height: 100px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
     border: 1px solid gray;
     background-color: white;
+    position: relative;
 }
-.sec-silde>img{
-    margin: 0px 8px 0px 8px;
+.sec-silde div{
+    float: left;
+}
+.sec-silde .sec-left{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+    text-align:center;
+    z-index: 100;
+}
+.sec-silde .sec-right{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    text-align:center;
+    z-index: 100;
+}
+.sec-silde .container{
+    overflow: hidden;
+    position:relative;
+    top: 10px;
+    left: 68px;
+    width:1068px;
+    height:80px;
+}
+.sec-silde .container ul{
+    position: absolute;
+    width: auto;
+}
+.sec-silde .container .sec-sildeimg{
+    float: left;
+    width: 178px;
+    height: 80px;
+    list-style: none;
 }
 .sec-menu-list{
     display: flex;
@@ -226,6 +264,12 @@ section{
     height: 150px;
     text-align: center;
     background-color: white;
+}
+.sec-list2{
+    cursor: pointer;
+}
+.sec-list2:hover{
+    background-color: rgba(45, 55,  133, 0.3);
 }
 .sec-list>img{
     padding-top: 25px;
